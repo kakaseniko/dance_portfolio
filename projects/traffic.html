@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Routes to Dynamo Eindhoven</title>
+
+
+<link rel="stylesheet" href="../css/site.css">
+<link rel="stylesheet" href="../css/projects/traffic.css">
+<link rel="stylesheet" href="../css/projects/intro.css">
+</head>
+<body class="project-page">
+<nav class="site-nav" aria-label="Main navigation"><a class="brand" href="../index.html">Portfolio</a><div class="nav-links"><a href="../index.html">Home</a><a href="../about.html">About</a><div class="nav-dropdown"><button class="nav-trigger" type="button" aria-expanded="false">Projects <span aria-hidden="true">⌄</span></button><div class="nav-menu"><a href="gyro-cube.html">Gyro Cube</a><a href="skate-bowl.html">Elevated Skate Bowl</a><a href="audience.html">Two Rooms</a><a href="traffic.html">Routes to Dynamo</a></div></div></div></nav>
+<section class="project-intro" aria-label="Project introduction">
+  <p>Contact improvisation practitioners argue that during a jam members are always part of the dance, even if they are sleeping in the corner of the space. They also explore the idea that the dance already starts when participants leave their home. This way of thinking highlights the contunity of movement beyond the actual movement practice.</p>
+  <p>By combining technology and data science, this idea can be made visible. The movement path of participants of an event can be tracked and displayed, showing how movement looks like when it is streched beyond the obvious. </p>
+  <p>The map can also demonstrate our interconnectedness, it can show how everybody is part of the dance (not just the dancers themselves), and can help discover interesting patterns.</p>
+</section>
+<div class="wrap">
+<h1>Movement before movement</h1>
+
+<div class="panel">
+  <button id="bNL">Netherlands</button>
+  <button id="bEH">Eindhoven</button>
+  <button id="bDyn">Dynamo (inside)</button>
+  <label>Amount of paths<input type="range" id="dens" min="0.1" max="1" step="0.05" value="1"></label>
+  <label>Line opacity<input type="range" id="alpha" min="0.03" max="0.6" step="0.01" value="0.14"></label>
+  <label class="row"><div type="" id="tiles"> </div></label>
+</div>
+
+<div class="stage">
+  <canvas id="cv"></canvas>
+  <div class="zoom"><button id="zi" aria-label="Zoom in">+</button><button id="zo" aria-label="Zoom out">−</button></div>
+
+<div id="stage"><div class="hint">Drag to pan · scroll or pinch to zoom</div></div>
+
+
+
+<script src="../js/main.js"></script>
+<script src="../js/traffic.js"></script>
+</body>
+</html>

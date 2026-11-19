@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Selected interactive and spatial design projects.">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a class="brand" href="index.html">Portfolio</a>
+    <div class="nav-links">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About</a>
+      <div class="nav-dropdown">
+        <button class="nav-trigger" type="button" aria-expanded="false" aria-haspopup="true">Projects <span aria-hidden="true">⌄</span></button>
+        <div class="nav-menu">
+          <a href="projects/gyro-cube.html">Gyro Cube</a>
+          <a href="projects/skate-bowl.html">Elevated Skate Bowl</a>
+          <a href="projects/audience.html">Two Rooms</a>
+          <a href="projects/traffic.html">Routes to Dynamo</a>
+        </div>
+      </div>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><span aria-hidden="true">◐</span><span class="theme-toggle-label">Dark mode</span></button>
+    </div>
+  </nav>
+  <div class="street-tags"><a class="street-tag street-tag-right" href="about.html" aria-label="About Enikő Kakas">to the rhythm<br>of the boogie<br>the beat</a></div>
+  <main class="home-shell">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-playground" aria-hidden="true">
+        <div class="hero-wall"></div>
+        <svg class="hero-doodle" viewBox="0 0 100 130" role="presentation">
+          <g class="doodle-pose pose-follow">
+            <circle cx="50" cy="16" r="10"/><path d="M48 27 Q43 45 50 63 M47 36 Q35 43 29 54 M48 37 Q61 41 68 50 M50 63 Q39 76 34 94 M50 63 Q62 75 68 91"/>
+          </g>
+          <g class="doodle-pose pose-skate">
+            <circle cx="50" cy="16" r="10"/><path d="M48 27 Q40 40 48 54 M44 36 Q31 37 25 46 M45 37 Q58 33 66 40 M48 54 Q61 59 69 68 M48 54 Q36 61 31 69 Q25 77 17 80 M15 74 Q47 67 82 73 M29 76a3 3 0 1 0 0 1 M70 76a3 3 0 1 0 0 1"/>
+          </g>
+          <g class="doodle-pose pose-climb">
+            <circle cx="50" cy="16" r="10"/><path d="M48 27 Q42 41 49 54 M44 36 Q34 27 25 23 M46 36 Q60 31 69 36 M49 54 Q38 61 32 76 M49 54 Q61 58 67 72"/>
+          </g>
+          <g class="doodle-pose pose-dance">
+            <circle cx="50" cy="16" r="10"/><path d="M50 27 Q49 44 50 61 M49 35 Q66 31 76 21 M49 35 Q34 31 25 21 M50 61 Q50 78 50 96 M50 61 Q64 66 72 58 Q78 52 76 45"/>
+          </g>
+          <g class="doodle-pose pose-cartwheel">
+            <circle cx="50" cy="16" r="10"/><path d="M50 27 Q48 44 50 61 M49 37 Q35 32 24 25 M50 39 Q64 34 77 28 M50 61 Q38 69 27 80 M50 61 Q63 68 74 78"/>
+          </g>
+          <path class="doodle-spark" d="M78 16v10m-5-5h10M17 24v8m-4-4h8"/>
+        </svg>
+        <span class="doodle-note"></span>
+      </div>
+      <p class="eyebrow">Movement · Hip hop · connection</p>
+      <h1 id="hero-title">Enikő Kakas <span>.interactive.</span></h1>
+      <p class="hero-copy">Projects. Waiting to be realized. Rooted in street culture.</p>
+      <a class="hero-link" href="#projects">Explore projects <span aria-hidden="true">↓</span></a>
+    </section>
+    <section class="home-video" aria-label="Studio video">
+      <div class="home-video-track">
+        <video autoplay muted loop preload="auto" playsinline aria-label="Studio and process video"><source src="/home/kakas/Videos/dance/eniko2_cropped.mp4" type="video/mp4">Add your video at media/about-01.mp4.</video>
+        <video autoplay muted loop preload="auto" playsinline aria-hidden="true"><source src="/home/kakas/Videos/dance/eniko2_cropped.mp4" type="video/mp4"></video>
+        <video autoplay muted loop preload="auto" playsinline aria-hidden="true"><source src="/home/kakas/Videos/dance/eniko2_cropped.mp4" type="video/mp4"></video>
+        <video autoplay muted loop preload="auto" playsinline aria-hidden="true"><source src="/home/kakas/Videos/dance/eniko2_cropped.mp4" type="video/mp4"></video>
+      </div>
+    </section>
+  
+    <section class="projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <h2 id="projects-title">Projects</h2>
+        <p>...for the future.</p>
+      </div>
+      <div class="project-grid">
+        <a class="project-card" href="projects/gyro-cube.html">
+          <svg class="project-doodle" viewBox="0 0 120 100" aria-hidden="true"><g><path d="M25 28 57 10l42 13v51L67 91 25 76zM25 28l42 14 32-19M67 42v49M25 28v48M57 10v32"/><ellipse cx="67" cy="66" rx="22" ry="13" transform="rotate(-28 67 66)"/><ellipse cx="67" cy="66" rx="10" ry="23" transform="rotate(-28 67 66)"/></g></svg>
+          <span class="project-number">01 / INTERACTIVE OBJECT</span><div><h3>Gyro Cube</h3><p>A wooden frame, rope web and aerial gyroscope, explored in 3D.</p></div>
+        </a>
+        <a class="project-card" href="projects/skate-bowl.html">
+          <svg class="project-doodle" viewBox="0 0 120 100" aria-hidden="true"><g><path d="M13 24v15q3 47 47 47t47-47V24M13 24h18M89 24h18M22 36q3 39 38 39t38-39M17 30l8-6m78 6-8-6"/><path d="M27 76q33 14 66 0" stroke-dasharray="2 5"/></g></svg>
+          <span class="project-number">02 / SPATIAL DESIGN</span><div><h3>Elevated Skate Bowl</h3><p>A sculptural skate bowl with a walkable perimeter and climbing roof.</p></div>
+        </a>
+        <a class="project-card" href="projects/audience.html">
+          <svg class="project-doodle" viewBox="0 0 120 100" aria-hidden="true"><g><path d="M12 20h42v60H12zM66 20h42v60H66zM54 20v60M60 25v50"/><path d="M20 31h26M74 31h26M20 68h26M74 68h26" stroke-dasharray="2 4"/><path d="M42 48h8m20 0h8"/></g></svg>
+          <span class="project-number">03 / SPACE & PERFORMANCE</span><div><h3>Two Rooms</h3><p>Compare how audience placement changes a performance space.</p></div>
+        </a>
+        <a class="project-card" href="projects/traffic.html">
+          <svg class="project-doodle" viewBox="0 0 120 100" aria-hidden="true"><g><path d="M19 18 42 13l15 10 16-8 28 8v53l-25 9-20-10-17 9-20-8zM42 13v53m31-51v53M19 45l23 9 31-13 28 9"/><path d="M27 69q11-25 30-11t28-16" stroke-dasharray="3 4"/><circle cx="27" cy="69" r="4"/><circle cx="85" cy="42" r="4"/></g></svg>
+          <span class="project-number">04 / DATA STORY</span><div><h3>Routes to Dynamo</h3><p>Trace simulated journeys from across the Netherlands to a local venue.</p></div>
+        </a>
+      </div>
+    </section>
+    <footer class="home-footer">
+      <span>Portfolio</span>
+      <nav class="social-links" aria-label="Social media">
+        <a href="https://www.instagram.com/any.cashonme/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" class="social-dot"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/eniko-kakas/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9v10M5 5v.1M10 19v-6a4 4 0 0 1 8 0v6M10 10v9"/></svg>
+        </a>
+        <a href="mailto:kakas.eniko@gmail.com" target="_blank" aria-label="Email" title="Email">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+        </a>
+      </nav>
+    </footer>
+  </main>
+  <script src="js/main.js"></script>
+  <script src="js/hero-doodle.js"></script>
+</body>
+</html>

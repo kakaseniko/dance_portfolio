@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gyro Cube</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../css/site.css">
+<link rel="stylesheet" href="../css/projects/gyro-cube.css">
+<link rel="stylesheet" href="../css/projects/intro.css">
+</head>
+<body class="project-page">
+<nav class="site-nav" aria-label="Main navigation"><a class="brand" href="../index.html">Portfolio</a><div class="nav-links"><a href="../index.html">Home</a><a href="../about.html">About</a><div class="nav-dropdown"><button class="nav-trigger" type="button" aria-expanded="false">Projects <span aria-hidden="true">⌄</span></button><div class="nav-menu"><a href="gyro-cube.html">Gyro Cube</a><a href="skate-bowl.html">Elevated Skate Bowl</a><a href="audience.html">Two Rooms</a><a href="traffic.html">Routes to Dynamo</a></div></div></div></nav>
+
+
+<section class="project-intro" aria-label="Project introduction">
+  <p>A cube created to transform the space for movement. The net inside devides while the gyro hoop connects.</p>
+  <p>Imagine a performance where each space represents a different world, with different physics inside. How does the movement of the entity that was born in the bottom, where gravity is strong, changes when it discovers the path to the world where all bodies stick together?</p>
+  <p>8 rooms, 8 worlds, connected by one hoop.</p>
+</section>
+<div class="app">
+  <div id="stage"><div class="hint">Drag to orbit · scroll or pinch to zoom</div></div>
+  <aside class="rail">
+    <div>
+      <h1>Gyro Cube</h1>
+      <p class="sub">A wooden 2×2 grid cube with a three-ring gyroscope held in a rope web. The innermost ring is an aerial hoop.</p>
+    </div>
+
+    <section aria-labelledby="h-specs">
+      <h2 id="h-specs">Sizes</h2>
+      <dl class="specs" id="specs"></dl>
+      <p class="warn" id="warn" hidden></p>
+      <div class="swatches">
+        <span style="--c:#c49a6c">Wood frame</span>
+        <span style="--c:#9c8a66">Rope web</span>
+        <span style="--c:#8c979c">Gimbal rings</span>
+        <span style="--c:#2b6e6a">Aerial hoop</span>
+      </div>
+    </section>
+
+    <section aria-labelledby="h-pose">
+      <h2 id="h-pose">Gyroscope pose</h2>
+      <div id="g-pose"></div>
+      <label class="check"><input type="checkbox" id="spin"> Spin the rings</label>
+    </section>
+
+    <section aria-labelledby="h-gyro">
+      <h2 id="h-gyro">Gyroscope (real size)</h2>
+      <div id="g-gyro"></div>
+    </section>
+
+    <section aria-labelledby="h-frame">
+      <h2 id="h-frame">Frame and web (real size)</h2>
+      <div id="g-frame"></div>
+      <label class="check"><input type="checkbox" id="showWeb" checked> Show rope web</label>
+    </section>
+
+  </aside>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+
+
+
+<script src="../js/main.js"></script>
+<script type="module" src="../js/gyro-cube.js"></script>
+</body>
+</html>

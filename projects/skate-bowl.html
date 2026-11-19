@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pool-Shape Skate Bowl · Perimeter Fence</title>
+
+
+<link rel="stylesheet" href="../css/site.css">
+<link rel="stylesheet" href="../css/projects/skate-bowl.css">
+<link rel="stylesheet" href="../css/projects/intro.css">
+</head>
+<body class="project-page">
+<nav class="site-nav" aria-label="Main navigation"><a class="brand" href="../index.html">Portfolio</a><div class="nav-links"><a href="../index.html">Home</a><a href="../about.html">About</a><div class="nav-dropdown"><button class="nav-trigger" type="button" aria-expanded="false">Projects <span aria-hidden="true">⌄</span></button><div class="nav-menu"><a href="gyro-cube.html">Gyro Cube</a><a href="skate-bowl.html">Elevated Skate Bowl</a><a href="audience.html">Two Rooms</a><a href="traffic.html">Routes to Dynamo</a></div></div></div></nav>
+
+<section class="project-intro" aria-label="Project introduction">
+  <p>One construct for two groups: climbers and skaters.</p>
+  <p>What has to happen to the members of one group to discover the existence of the other group? You have to go over the edge to discover something new.</p>
+  <p>Could the two groups together flip the construct to create a new environment? Bowl to ramp, overhang to slab.</p>
+</section>
+<div class="app">
+  <main id="stage"><div class="hint">Drag to orbit · scroll / pinch to zoom</div></main>
+  <aside class="panel">
+    <header><h1>Elevated Skate Bowl</h1><p>Circular concrete bowl on a single wine-glass support, with a broad pool-like floor, a perimeter safety fence and a curved roof-climbing underside.</p></header>
+    <section><h2>Form</h2>
+      <div class="control"><label for="diam">Bowl diameter</label><output id="diamOut"></output><input id="diam" type="range" min="7" max="15" step=".5" value="9"></div>
+      <div class="control"><label for="depth">Bowl depth</label><output id="depthOut"></output><input id="depth" type="range" min="1" max="2.4" step=".1" value="2.1"></div>
+      <div class="control"><label for="height">Rim elevation</label><output id="heightOut"></output><input id="height" type="range" min="2.2" max="5.5" step=".1" value="3.2"></div>
+      <div class="control"><label for="thick">Shell thickness</label><output id="thickOut"></output><input id="thick" type="range" min=".12" max=".35" step=".01" value=".22"></div>
+      <p class="note">Pool profile: a broad, flatter skating floor with a smooth transition into the deeper curved walls.</p>
+    </section>
+    <section><h2>Underside climbing</h2>
+      <div class="control"><label for="holds">Hold density</label><output id="holdsOut"></output><input id="holds" type="range" min="30" max="150" step="5" value="90"></div>
+      <div class="control"><label for="holdsize">Hold size</label><output id="holdsizeOut"></output><input id="holdsize" type="range" min=".12" max=".32" step=".01" value=".21"></div>
+      <label class="check"><input id="showHolds" type="checkbox" checked> Show climbing holds</label>
+      <label class="check"><input id="showSupport" type="checkbox" checked> Show central support</label>
+      <label class="check"><input id="showShell" type="checkbox" checked> Show bowl shell</label>
+      <label class="check"><input id="showFence" type="checkbox" checked> Show perimeter safety fence</label>
+    </section>
+    <section><h2>Materials</h2><div class="key">
+      <span><i class="dot" style="background:#c8c9c4"></i>Concrete bowl</span>
+      <span><i class="dot" style="background:#24776d"></i>Climbing holds</span>
+      <span><i class="dot" style="background:#a9794d"></i>Support</span>
+    </div>
+  </aside>
+</div>
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}
+</script>
+
+
+<script src="../js/main.js"></script>
+<script type="module" src="../js/skate-bowl.js"></script>
+</body></html>

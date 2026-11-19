@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Two Rooms</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+
+<link rel="stylesheet" href="../css/site.css">
+<link rel="stylesheet" href="../css/projects/audience.css">
+<link rel="stylesheet" href="../css/projects/intro.css">
+</head><body class="project-page">
+<nav class="site-nav" aria-label="Main navigation"><a class="brand" href="../index.html">Portfolio</a><div class="nav-links"><a href="../index.html">Home</a><a href="../about.html">About</a><div class="nav-dropdown"><button class="nav-trigger" type="button" aria-expanded="false">Projects <span aria-hidden="true">⌄</span></button><div class="nav-menu"><a href="gyro-cube.html">Gyro Cube</a><a href="skate-bowl.html">Elevated Skate Bowl</a><a href="audience.html">Two Rooms</a><a href="traffic.html">Routes to Dynamo</a></div></div></div></nav>
+
+<section class="project-intro" aria-label="Project introduction">
+    <p>Many performances play with the idea of including the audience. Is it possible to complately blur the line between audience and performer? Can a cleverly constructed space facilitate co-creation?</p>
+</section>
+<div class="app">
+<div id="stage"><div class="hint">Drag to orbit · scroll or pinch to zoom</div></div>
+<aside class="rail">
+<div><h1>Two Rooms</h1>
+<p class="sub">Two identical living rooms share one wall. Room A: performers and audience occupy the space together. Room B: performers inside, audience watching from outside through the glass.</p></div>
+<section><h2>Key</h2>
+<div class="swatches"><span style="--c:#2b8f88">Performer</span><span style="--c:#d9822b">Audience</span><span style="--c:#e9e4da">Walls</span><span style="--c:#9fc4d8">Glass front</span></div></section>
+<section><h2>People</h2><div id="g-people"></div></section>
+<section><h2>Room</h2><div id="g-room"></div>
+<label class="check"><input type="checkbox" id="glass" checked> Show glass front</label>
+<label class="check"><input type="checkbox" id="roof"> Show ceiling</label>
+<label class="check"><input type="checkbox" id="anim" checked> Performers dance</label></section>
+</aside></div>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
+
+<script src="../js/main.js"></script>
+<script type="module" src="../js/audience.js"></script>
+</body></html>

@@ -1,0 +1,25 @@
+.project-intro {
+  max-width: min(1100px, calc(100% - 40px));
+  margin: 24px auto;
+  padding: clamp(20px, 3vw, 32px) clamp(22px, 4vw, 40px);
+  display: grid;
+  gap: 12px;
+  border: 1px solid var(--line, var(--site-border));
+  border-left: 4px solid var(--accent, var(--site-ink));
+  border-radius: 12px;
+  background: var(--panel, var(--card, var(--site-paper)));
+  color: var(--muted, var(--site-muted));
+}
+.project-intro p {
+  max-width: 900px;
+  margin: 0;
+  font-size: clamp(15px, 1.2vw, 17px);
+  line-height: 1.65;
+}
+.project-intro p:first-child {
+  color: var(--fg, var(--ink, var(--site-ink)));
+  font-weight: 500;
+}
+@media (max-width: 600px) {
+  .project-intro { max-width: calc(100% - 28px); margin-block: 14px; }
+}
